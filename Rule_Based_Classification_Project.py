@@ -48,7 +48,7 @@ bins = [0, 18, 23, 30, 40, agg_df["AGE"].max()]
 
 # Bölünen noktalara karşılık isimlendirmelerin ne olacağını ifade edelim.
 my_labels = ['0_18', '19_23', '24-30', '31-40', '41_' + str(agg_df["AGE"].max())]
-agg_df['age_cat'] = pd.cut(agg_df['AGE'], bins, labels=my_labels)
+agg_df['AGE_CAT'] = pd.cut(agg_df['AGE'], bins, labels=my_labels)
 
 # Yeni seviye tabanlı müşterileri (persona) tanımlamaya çalışalım.
 # Gözlem değerlerine nasıl erişiriz?
